@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='css/styles.css'>
+</head>
+
+<body>
+    <div class = "welcomescreen">
+      
+      <ul>
+        <li><div><h1>START</h1></div></li>
+        <li><button class='quizbutton' id = 'quiz1' onClick="quizButtonClicked(this.id)">Quiz 1</button></li>
+        <li><button class='quizbutton' id = 'quiz2' onClick="quizButtonClicked(this.id)">Quiz 2</button></li>
+      </ul>
+    </div>  
+    
+    <div class = 'quizview'>
+      <h3><div class = 'scoretext'>Score</div></h3>
+      <h1><div class = 'questiontext'>Question</div></h1>
+      <ul>
+        <li><button class='answerbutton' id = 'answer1' onClick="answerButtonClick(this.id)">Answer 1</button></li>
+        <li><button class='answerbutton' id = 'answer2' onClick="answerButtonClick(this.id)">Answer 2</button></li>
+        <li><button class='answerbutton' id = 'answer3' onClick="answerButtonClick(this.id)">Answer 3</button></li>
+        <li><button class='answerbutton' id = 'answer4' onClick="answerButtonClick(this.id)">Answer 4</button></li>
+      </ul>
+      
+      <button class='view debugAlert' onClick="debugAlert()">debugAlert</button>
+    </div>
+    
+    <div class = 'completionview'>
+      <h1><div class = 'finalscoretext'>Score</div></h1>
+      <div class = 'results'>Pass/Fail</div>
+      <button class='quizbutton' onClick="intializeQuiz()">Try Again?</button>
+    </div>
+    
+    <script src = 'https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>

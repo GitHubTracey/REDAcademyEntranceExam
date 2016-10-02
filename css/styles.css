@@ -1,0 +1,65 @@
+div .quizbutton {
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+div .answerbutton {
+    width: 350px;
+    height: 100px;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 2s;
+}
+
+div .answerbutton:hover {
+    background-color: orange;
+}
+
+/* unordered list - for displaying Quiz 1 / Quiz 2 buttons */
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  height: 500px; /* account for borders */
+  width: 200px;
+}
+
+.quizview ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  height: 400px; /* account for borders */
+  width: 800px;
+}
+/* line item - Quiz 1 / Quiz 2 buttons */
+li {
+  width: 200px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  margin: 25px;
+  font-size: 36px;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+h1 {
+    text-align: left;
+    color: black;
+}
+
+h3 {
+    text-align: right;
+    right: 75%;
+}
+
+.completionview {
+    font-size: 36px;
+}
